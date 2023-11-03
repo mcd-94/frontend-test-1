@@ -1,0 +1,10 @@
+/* CSS reset values */
+*,
+::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* End of CSS reset values */
+
