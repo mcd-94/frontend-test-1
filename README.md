@@ -1,4 +1,4 @@
-# Prueba para frontend developer
+# Prueba para frontend developer!
 ## Descripción
 La tarea consiste en diseñar una aplicación web para móviles que permita obtener las medidas de una mano a partir de varios parametros y una foto.
 
