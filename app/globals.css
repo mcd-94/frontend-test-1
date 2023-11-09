@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
 /* CSS reset values */
 *,
 ::after,
@@ -8,3 +10,234 @@
 }
 /* End of CSS reset values */
 
+body {
+  overflow-x: hidden;
+}
+
+.page {
+  padding-top: 68px;
+  border: 1px solid red;
+  /* width: 375px; */
+  height: 852px;
+  position: relative;
+}
+
+header {
+  display: flex;
+  width: 361px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding: 0px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+h1 {
+  width: 313px;
+  height: 28px;
+  color: var(--text-high, #101828);
+  text-align: center;
+
+  /* Text lg/Semibold */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+header > p {
+  width: 313px;
+  height: 60px;
+  color: var(--text-med, #475467);
+  text-align: center;
+
+  /* Text sm/Regular */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  width: 361px;
+  padding: 0px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.coinsAndHand {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 313px;
+  height: 264px;
+  gap: 16px;
+}
+
+.coinSelector {
+  display: flex;
+  width: 279px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.coinSelector > h2 {
+  color: var(--gray-700, #344054);
+
+  /* Text sm/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.coinsContainer {
+  border-radius: 12px;
+  border: 1px solid var(--gray-3, #c4c4c8);
+  background: var(--base-white, #fff);
+
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  padding: 16px;
+  gap: 16px;
+}
+
+.handForm {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 279px;
+}
+
+.handForm > p {
+  color: var(--gray-700, #344054);
+
+  /* Text sm/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.handContainer {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  border: 1px solid #c4c4c8;
+  border-radius: 12px;
+}
+
+.ringFitForm {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 265px;
+}
+
+.ringFit {
+  flex-direction: column;
+  display: flex;
+  width: 265px;
+  gap: 8px;
+}
+
+.ringFit > p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #344054;
+}
+
+.ringFitForm > label {
+  border: 1px solid #d0d5dd; /* Default unselected border */
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.ringFitForm > label.selected {
+  border: 2px solid #ec6276; /* Selected border */
+}
+
+footer {
+  display: flex;
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    /* right: 0; */
+
+    width: 393px;
+    height: 32px;
+    padding: 0px 24px 16px 24px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+footer > span {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.checked {
+  border-radius: 50%;
+  background-color: #ec6276;
+  padding: 1px;
+}
+
+.modalActions {
+  height: 149px;
+  position: absolute;
+  top: 669px;
+  padding: 32px 0px 0px 0px;
+}
+
+.buttonContainer > button {
+  border: 1px solid #ec6276;
+  width: 166.5px;
+  height: 44px;
+  padding: 10px 18px 10px 18px;
+  border-radius: 8px;
+  border: 1px;
+  gap: 8px;
+}
+
+.buttonContainer {
+  height: 68px;
+  padding: 0px 24px 24px 24px;
+  gap: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
