@@ -5,7 +5,7 @@ import One from "./coins/One";
 import FiftyCents from "./coins/FiftyCents";
 import TwentyCents from "./coins/TwentyCents";
 import FiveCents from "./coins/FiveCents";
-import HandContent from "./HandContent";
+
 
 
 const CoinSelector = () => {
@@ -25,7 +25,7 @@ const CoinSelector = () => {
             type="radio"
             id="twoEuro"
             name="coins"
-            value="twoEuro"
+            value="2"
             hidden
             onChange={(e) => handleCoinSelection(e, "Two Euro")}
           />
@@ -37,7 +37,7 @@ const CoinSelector = () => {
             type="radio"
             id="oneEuro"
             name="coins"
-            value="oneEuro"
+            value="1"
             hidden
             onChange={(e) => handleCoinSelection(e, "One Euro")}
           />
@@ -49,7 +49,7 @@ const CoinSelector = () => {
             type="radio"
             id="fiftyCents"
             name="coins"
-            value="fiftyCents"
+            value="0.5"
             hidden
             onChange={(e) => handleCoinSelection(e, "Fifty Cents")}
           />
@@ -61,7 +61,7 @@ const CoinSelector = () => {
             type="radio"
             id="twentyCents"
             name="coins"
-            value="twentyCents"
+            value="0.20"
             hidden
             onChange={(e) => handleCoinSelection(e, "Twenty Cents")}
           />
@@ -73,7 +73,7 @@ const CoinSelector = () => {
             type="radio"
             id="fiveCents"
             name="coins"
-            value="fiveCents"
+            value="0.05"
             hidden
             onChange={(e) => handleCoinSelection(e, "Five Cents")}
           />

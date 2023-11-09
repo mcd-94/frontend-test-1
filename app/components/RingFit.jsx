@@ -18,22 +18,22 @@ const RingFit = () => {
           <input
             type="radio"
             name="ringFit"
-            value="Ajustado"
+            value="fitted"
             onChange={handleFitChange}
             style={{ display: "none" }}
           />
-          {selectedFit === "Ajustado" ? <Checked /> : <input type="radio" />}
+          {selectedFit === "fitted" ? <Checked /> : <input type="radio" />}
         </label>
         <label className={selectedFit === "Suelto" ? "selected" : ""}>
           Suelto
           <input
             type="radio"
             name="ringFit"
-            value="Suelto"
+            value="loose"
             onChange={handleFitChange}
             style={{ display: "none" }}
           />
-          {selectedFit === "Suelto" ? <Checked /> : <input type="radio" />}
+          {selectedFit === "loose" ? <Checked /> : <input type="radio" />}
         </label>
       </form>
     </div>
