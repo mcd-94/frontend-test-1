@@ -120,6 +120,10 @@ header > p {
   gap: 16px;
 }
 
+.coinsContainer > label {
+  cursor: pointer;
+}
+
 .coinSelector .coinsContainer label.selected {
   border-bottom: 2px solid #ec6276;
   border-radius: 50%;
