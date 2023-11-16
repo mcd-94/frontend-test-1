@@ -125,7 +125,7 @@
       padding: 16px;
       gap: 16px;
     }
-    
+
     .coinSelector .coinsContainer label.selected {
       border-bottom: 2px solid #ec6276;
       border-radius: 50%;
@@ -422,6 +422,12 @@
       background: #ec6276;
     }
 
+
+    @media (min-width: 600px) {
+      .page {
+        text-align: center;
+      }
+    }
   
     
 

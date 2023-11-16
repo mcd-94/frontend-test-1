@@ -8,7 +8,6 @@ import HandContent from "./components/HandContent";
 import Footer from "./components/Footer";
 import RingFit from "./components/RingFit";
 
-
 const HomePage = () => {
   // Set default values for selectedCoin and selectedFit
   const [selectedCoin, setSelectedCoin] = useState("2"); // "2" for the 2 Euro coin
@@ -33,7 +32,9 @@ const HomePage = () => {
 
   return (
     <div className="page">
-      <Header />
+      <div>
+        <Header />
+      </div>
       <div className="content">
         <div className="coinsAndHand">
           <CoinSelector
