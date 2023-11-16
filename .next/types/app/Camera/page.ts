@@ -1,4 +1,4 @@
-// File: /home/mc/front/frontend-test-1/app/Camera/page.jsx
+// File: /home/mc/code/frontend-test-1/app/Camera/page.jsx
 import * as entry from '../../../../app/Camera/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -233,7 +233,7 @@ footer > span {
 }
 
 .volver {
-  width: 166.5px;
+  width: 150px;
   height: 44px;
   padding: 10px 18px 10px 18px;
   border-radius: 8px;
@@ -248,12 +248,10 @@ footer > span {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
-
 }
 
 .siguiente {
-  
-  width: 166.5px;
+  width: 150px;
   height: 44px;
   padding: 10px 18px 10px 18px;
   border-radius: 8px;
@@ -272,7 +270,145 @@ footer > span {
   background: #ec6276;
 }
 
-video {
+.cameraPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.cameraButtons {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+.cameraButtons > button {
+  width: 166.5px;
+  height: 44px;
+  padding: 10px 18px 10px 18px;
+  border-radius: 8px;
+  gap: 8px;
+  text-decoration: none;
+  border: 1px solid #ec6276;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  background: #ec6276;
+}
+
+.cameraButtons > a > button {
+  width: 166.5px;
+  height: 44px;
+  padding: 10px 18px 10px 18px;
+  border-radius: 8px;
+  gap: 8px;
+  text-decoration: none;
+  border: 1px solid #ec6276;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  background: #ec6276;
+}
+.capturedImage {
   width: 100%;
   height: auto;
+}
+
+.resultsPage {
+  font-family: Inter;
+  height: 100vh;
+}
+
+.resultsPage > .resultsHeader {
+  margin-top: 1em;
+  display: flex;
+  width: 361px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding: 0px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.resultsPage > .resultsHeader > p {
+  text-align: left;
+  margin-bottom: 0;
+  font-size: large;
+  height: auto;
+}
+
+.resultsPage > h1 {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  color: #101828;
+}
+
+.resultsPage > p {
+  color: var(--gray-700, #344054);
+}
+
+.resultsPage > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-top: 1px solid #d0d5dd;
+  border-bottom: 1px solid #d0d5dd;
+  padding: 1em;
+  margin: 1em;
+}
+
+.resultsPage > ul > p {
+  color: #101828;
+}
+.resultsPage > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.resultsPage > ul > li > span {
+  background-color: #101828;
+  color: white;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+.repetirMedicion {
+
+  text-align: center;
+}
+
+.repetirMedicion > a > button {
+
+  height: 44px;
+  padding: 10px 50px 10px 50px;
+  border-radius: 8px;
+  gap: 8px;
+  text-decoration: none;
+  border: 1px solid #ec6276;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  background: #ec6276;
 }

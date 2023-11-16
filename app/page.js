@@ -1,17 +1,34 @@
 "use client";
-import React from "react";
+
+import React, { useState } from "react";
+import Link from "next/link";
 import Header from "./components/Header";
 import CoinSelector from "./components/CoinSelector";
 import HandContent from "./components/HandContent";
 import Footer from "./components/Footer";
 import RingFit from "./components/RingFit";
-import ModalActions from "./components/ModalActions";
+
 
 const HomePage = () => {
-  const handleCoinSelection = (event, name) => {
+  // Set default values for selectedCoin and selectedFit
+  const [selectedCoin, setSelectedCoin] = useState("2"); // "2" for the 2 Euro coin
+  const [selectedFit, setSelectedFit] = useState("fitted");
+
+  const handleCoinSelection = (event, value, name) => {
     if (event.target.checked) {
       console.log(`${name} coin selected`);
+      setSelectedCoin(value);
     }
+  };
+
+  const handleFitSelection = (fit) => {
+    setSelectedFit(fit);
+  };
+
+  const handleNextPage = () => {
+    // Store selectedCoin and selectedFit in local storage
+    localStorage.setItem("selectedCoin", selectedCoin);
+    localStorage.setItem("selectedFit", selectedFit);
   };
 
   return (
@@ -19,12 +36,31 @@ const HomePage = () => {
       <Header />
       <div className="content">
         <div className="coinsAndHand">
-          <CoinSelector />
+          <CoinSelector
+            selectedCoin={selectedCoin}
+            handleCoinSelection={handleCoinSelection}
+          />
           <HandContent />
-          <RingFit />
+          <RingFit
+            selectedFit={selectedFit}
+            handleFitSelection={handleFitSelection}
+          />
+        </div>
+        <div className="modalActions">
+          <div className="buttonContainer">
+            <Link href={"/"} className="volver">
+              Volver
+            </Link>
+            <Link
+              href={"/Camera"}
+              className="siguiente"
+              onClick={handleNextPage}
+            >
+              Siguiente
+            </Link>
+          </div>
         </div>
       </div>
-      <ModalActions />
       <Footer />
     </div>
   );
